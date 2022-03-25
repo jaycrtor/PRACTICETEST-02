@@ -22,6 +22,8 @@ filterUserProfiles(facebookUsers, (user) => user.state === "New York"); // ["Mik
 
 function filterUserProfiles(users, filter) {
   // Your code here
+  return users.filter(filter).map(user => user.name)
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
