@@ -21,14 +21,7 @@ console.log(clothesList); // ['tshirt', 'pants']
 
 function shoppingList(list) {
   // Your code here
-  if (!list) list = []
 
-  const _shoppingList = (item) => {
-    list.push(item)
-    return list
-  }
-
-  return _shoppingList
 
 }
 
