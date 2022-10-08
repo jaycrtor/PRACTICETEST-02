@@ -13,11 +13,27 @@ pickyMyMap(booleans, (boolean) => !boolean); // [true, true]
 
 You may not use Array's `map()`, `filter()`, or `forEach()` methods.
 ***********************************************************************/
-
+// let cat = "cat"
+// console.log(cat === true)
+// if (cat){
+// 	console.log(cat)
+// }
 function pickyMyMap(arr, cb) {
 	// Your code here
-
+let newArr = []
+for (let i = 0; i < arr.length; i++){
+	let el = arr[i]
+	// console.log(el)
+	//call cb on our el
+	if(cb(el)){
+		newArr.push(cb(el))
+	}
 }
+return newArr
+}
+
+const nums = [1, 2, 3, 4];
+console.log(pickyMyMap(nums, (num) => num - 2)); // [-1, 1, 2]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
